@@ -13,6 +13,7 @@ test.fail('test fails intentionally ',async({page,expect})=>{
 test.slow('test runs slow only ',async({page,expect})=>{
     await page.goto("https://the-internet.herokuapp.com/login");
     await page.waitForTimeout(1000);
+    console.log("my change");
 });
 test.fixme('test not ready ',async({page,expect})=>{
   //no ready yet 
