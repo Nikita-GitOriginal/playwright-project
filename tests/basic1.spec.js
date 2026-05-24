@@ -9,8 +9,8 @@ await page.goto('https://demo.automationtesting.in/Register.html',{waitUntil:'do
 // //goback
 // await page.goBack();
 // //forward
-// //await page.goForward();
 
+console.log("after delete add");
 await page.getByPlaceholder("First Name").fill('Nikita');
 await page.type('input[placeholder="Last Name"]','Agrawal');
 
